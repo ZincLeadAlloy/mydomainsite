@@ -9,5 +9,11 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
         // Add the 'active' class to the clicked link
         this.classList.add('active');
+
+        // Get the section ID from the href attribute
+        const sectionId = this.getAttribute('href').substring(1);
+
+        // Redirect to the corresponding HTML file
+        window.location.href = `${sectionId}.html`;
     });
 });
