@@ -3,57 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZLA - Your Personal Space</title>
-   <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #aedcc0;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin-right: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        /* Add more styling as needed */
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>ZLA - Your Personal Page</title>
 </head>
 <body>
     <header>
-        <div class="logo">ZLA</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#stls">STLs</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#pictures">Pictures</a></li>
@@ -65,35 +21,37 @@
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to Your Personal Space</h2>
-            <p>This is the landing page for your personal website. Explore the different sections using the navigation bar above.</p>
+        <section id="stls">
+            <h2>STLs</h2>
+            <!-- Your STL content goes here -->
         </section>
-        <!-- Add similar sections with corresponding IDs for other links -->
+
+        <section id="programs">
+            <h2>Programs</h2>
+            <!-- Your programs content goes here -->
+        </section>
+
+        <section id="pictures">
+            <h2>Pictures</h2>
+            <!-- Your pictures content goes here -->
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <!-- Your videos content goes here -->
+        </section>
+
+        <section id="stories">
+            <h2>Stories</h2>
+            <!-- Your stories content goes here -->
+        </section>
+
+        <section id="thoughts">
+            <h2>General Thoughts</h2>
+            <!-- Your general thoughts content goes here -->
+        </section>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll("nav a");
-
-            navLinks.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    // Check if the link is an external link or has a target attribute
-                    if (this.hostname !== window.location.hostname || this.target === '_blank') {
-                        return; // Let the browser handle external links or links with target="_blank"
-                    }
-
-                    event.preventDefault();
-
-                    const targetId = this.getAttribute("href").substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: "smooth" });
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
