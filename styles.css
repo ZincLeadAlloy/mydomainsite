@@ -30,3 +30,10 @@ main {
 section {
     margin-bottom: 30px;
 }
+/* Add this style to highlight the active link */
+nav a.active {
+    color: #fff; /* White */
+    background-color: #333; /* Dark Grey */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
