@@ -39,14 +39,14 @@ nav a.active {
 }
 /* Styles for the card */
 .card {
-    border: 1px solid #ccc;
+    border: 2px solid black; /* Black border */
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 5% shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Hover animation */
 }
 
 /* Hover effect */
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
